@@ -16,26 +16,26 @@ if sys.argv[-1] == 'publish':
 
 readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
-import djangorestframework_camel_case
+import djangorestframework_camel_case2
 
 setup(
-    name='djangorestframework-camel-case',
-    version=djangorestframework_camel_case.__version__,
+    name='djangorestframework-camel-case2',
+    version=djangorestframework_camel_case2.__version__,
     description='Camel case JSON support for Django REST framework.',
     long_description=readme + '\n\n' + history,
-    author='Vitaly Babiy',
-    author_email='vbabiy86@gmail.com',
-    url='https://github.com/vbabiy/djangorestframework-camel-case',
+    author='fadawar',
+    author_email='fadawar@gmail.com',
+    url='https://github.com/fadawar/djangorestframework-camel-case2',
     packages=[
-        'djangorestframework_camel_case',
+        'djangorestframework_camel_case2',
     ],
-    package_dir={'djangorestframework_camel_case': 'djangorestframework_camel_case'},
+    package_dir={'djangorestframework_camel_case2': 'djangorestframework_camel_case2'},
     include_package_data=True,
     install_requires=[
     ],
     license="BSD",
     zip_safe=False,
-    keywords='djangorestframework_camel_case',
+    keywords='djangorestframework_camel_case2',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

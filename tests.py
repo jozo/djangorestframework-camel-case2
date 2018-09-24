@@ -3,7 +3,7 @@
 from copy import deepcopy
 from unittest import TestCase
 
-from djangorestframework_camel_case.util import camelize, underscoreize
+from djangorestframework_camel_case2.util import camelize, underscoreize
 
 
 class UnderscoreToCamelTestCase(TestCase):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from djangorestframework_camel_case.settings import api_settings
-from djangorestframework_camel_case.util import camelize
+from djangorestframework_camel_case2.settings import api_settings
+from djangorestframework_camel_case2.util import camelize
 
 
 class CamelCaseJSONRenderer(api_settings.RENDERER_CLASS):
