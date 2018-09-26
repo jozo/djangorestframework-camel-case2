@@ -1,43 +1,30 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
-import sys
+from setuptools import setup, find_packages
 
-
-try:
-    from setuptools import setup
-except ImportError:
-    from distutils.core import setup
-
-if sys.argv[-1] == 'publish':
-    os.system('python setup.py sdist upload')
-    sys.exit()
-
-readme = open('README.rst').read()
-history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 import djangorestframework_camel_case2
+
+with open('README.md', 'r') as fh:
+    readme = fh.read()
+
+with open('CHANGELOG.md', 'r') as fh:
+    changelog = fh.read()
 
 setup(
     name='djangorestframework-camel-case2',
     version=djangorestframework_camel_case2.__version__,
-    description='Camel case JSON support for Django REST framework.',
-    long_description=readme + '\n\n' + history,
+    url='https://github.com/fadawar/djangorestframework-camel-case2',
+    description='Camel case JSON support for Django REST framework',
+    license='BSD',
+    long_description=readme + '\n\n' + changelog,
+    long_description_content_type='text/markdown',
     author='fadawar',
     author_email='fadawar@gmail.com',
-    url='https://github.com/fadawar/djangorestframework-camel-case2',
-    packages=[
-        'djangorestframework_camel_case2',
-    ],
-    package_dir={'djangorestframework_camel_case2': 'djangorestframework_camel_case2'},
-    include_package_data=True,
-    install_requires=[
-    ],
-    license="BSD",
-    zip_safe=False,
+    packages=find_packages(exclude=['tests*']),
     keywords='djangorestframework_camel_case2',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
