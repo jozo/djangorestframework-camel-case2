@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.2.3]
+## Fixed
+- Fixed missing CHANGELOG.md in package on pypi
+
 ## [0.2.2]
 ### Changed
 - Update README
