@@ -75,6 +75,21 @@ REST_FRAMEWORK = {
 }
 ```
 
+Alternatively, you can change this behavior on a class level by setting `json_underscoreize`:
+
+```python
+from djangorestframework_camel_case2.parser import CamelCaseJSONParser
+from rest_framework.generics import CreateAPIView
+
+class NoUnderscoreBeforeNumberCamelCaseJSONParser(CamelCaseJSONParser):
+    json_underscoreize = {'no_underscore_before_number': True}
+    
+class MyView(CreateAPIView):
+    queryset = MyModel.objects.all()
+    serializer_class = MySerializer
+    parser_classes = (NoUnderscoreBeforeNumberCamelCaseJSONParser,)
+```
+
 ## Running Tests
 
 To run the current test suite, execute the following from the root of the project
