@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [0.2.4]
 - Added `json_underscoreize` to `CamelCaseJSONParser` as class attribute to support variables with and without an underscore before a number in the same project
 - Fixed import of six in combination with DRF 3.10
 
