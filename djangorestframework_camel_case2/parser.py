@@ -2,7 +2,8 @@
 import json
 
 from django.conf import settings
-from rest_framework.parsers import ParseError, six
+from django.utils import six
+from rest_framework.parsers import ParseError
 
 from djangorestframework_camel_case2.settings import api_settings
 from djangorestframework_camel_case2.util import underscoreize
