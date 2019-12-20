@@ -100,5 +100,5 @@ class MyView(CreateAPIView):
 To run the current test suite, execute the following from the root of the project
 
 ```bash
-poetry run pytest tests.py
+poetry run pytest
 ```
