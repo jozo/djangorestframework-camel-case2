@@ -1,7 +1,7 @@
 import re
 from collections import OrderedDict
 
-from django.utils import six
+import six
 
 camelize_re = re.compile(r"[a-z0-9]?_[a-z0-9]")
 

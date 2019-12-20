@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+- Changed project internals - we are using poetry now
+- Add support for Django 3.0
 
 ## [0.2.4]
 - Added `json_underscoreize` to `CamelCaseJSONParser` as class attribute to support variables with and without an underscore before a number in the same project
