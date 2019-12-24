@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [0.2.5]
 - Changed project internals - we are using poetry now
 - Add support for Django 3.0
 

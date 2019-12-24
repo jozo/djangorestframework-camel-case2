@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "djangorestframework-camel-case2"
-version = "0.2.4"
+version = "0.2.5"
 description = "Camel case JSON support for Django REST framework"
 authors = ["jozo <hi@jozo.io>"]
 repository = "https://github.com/jozo/djangorestframework-camel-case2"
@@ -11,7 +11,7 @@ keywords = ['django', 'camel-case', 'django-rest-framework']
 [tool.poetry.dependencies]
 python = "~2.7 || ^3.5"
 django = ">= 1.11"
-djangorestframework = ">= 3.9"
+djangorestframework = ">= 3.8"
 six = "^1.13"
 
 [tool.poetry.dev-dependencies]
