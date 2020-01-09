@@ -3,6 +3,9 @@
 from copy import deepcopy
 
 from djangorestframework_camel_case2.util import camelize, underscoreize
+from django.utils.translation import gettext_lazy as _
+from django.conf import settings
+from django.core.wsgi import get_wsgi_application
 
 
 class TestUnderscoreToCamel:
@@ -48,6 +51,17 @@ class TestUnderscoreToCamel:
         reference_input = deepcopy(data)
         camelize(data)
         assert data == reference_input
+
+    def test_translation(self):
+        settings.configure(USE_I18N=True)
+        app = get_wsgi_application()
+        data = {
+            "two_word": _('Example'),
+        }
+        output = {
+            "twoWord": "Example",
+        }
+        assert camelize(data) == output
 
 
 class TestCamelToUnderscore:
