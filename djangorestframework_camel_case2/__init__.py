@@ -3,4 +3,4 @@
 
 __author__ = 'jozo'
 __email__ = 'hi@jozo.io'
-__version__ = '0.2.5'
+__version__ = '0.3.0'

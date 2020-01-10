@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "djangorestframework-camel-case2"
-version = "0.2.5"
+version = "0.3.0"
 description = "Camel case JSON support for Django REST framework"
 readme = "README.md"
 authors = ["jozo <hi@jozo.io>"]

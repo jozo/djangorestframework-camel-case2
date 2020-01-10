@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+
+## [0.3.0]
 - Drop support for Python 2, Django 1.11 and Django Rest Framework 3.8
 - Fix rendering of lazy strings from Django
 
