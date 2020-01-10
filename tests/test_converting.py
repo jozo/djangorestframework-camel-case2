@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 from copy import deepcopy
 
 from djangorestframework_camel_case2.util import camelize, underscoreize
@@ -56,10 +54,10 @@ class TestUnderscoreToCamel:
         settings.configure(USE_I18N=True)
         app = get_wsgi_application()
         data = {
-            "two_word": _('Example'),
+            "two_word": _("Example äňô"),
         }
         output = {
-            "twoWord": "Example",
+            "twoWord": "Example äňô",
         }
         assert camelize(data) == output
 

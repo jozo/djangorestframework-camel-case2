@@ -1,8 +1,6 @@
 import re
 from collections import OrderedDict
 
-import six
-
 camelize_re = re.compile(r"[a-z0-9]?_[a-z0-9]")
 
 
@@ -18,7 +16,7 @@ def camelize(data):
     if isinstance(data, dict):
         new_dict = OrderedDict()
         for key, value in data.items():
-            if isinstance(key, six.string_types) and '_' in key:
+            if isinstance(key, str) and '_' in key:
                 new_key = re.sub(camelize_re, underscore_to_camel, key)
             else:
                 new_key = key
@@ -46,13 +44,13 @@ def underscoreize(data, **options):
     if isinstance(data, dict):
         new_dict = {}
         for key, value in data.items():
-            if isinstance(key, six.string_types):
+            if isinstance(key, str):
                 new_key = camel_to_underscore(key, **options)
             else:
                 new_key = key
             new_dict[new_key] = underscoreize(value, **options)
         return new_dict
-    if is_iterable(data) and not data == str(data):
+    if is_iterable(data) and not isinstance(data, str):
         return [underscoreize(item, **options) for item in data]
 
     return data

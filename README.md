@@ -6,9 +6,9 @@
 Camel case JSON support for Django REST framework.
 
 Compatible with: 
-* Python: 2.7, Python 3.5+
-* Django: 1.11, 2.2, 3.0
-* Django REST framework: 3.8?, 3.9, 3.10
+* Python: Python 3.5+
+* Django: 2.2, 3.0+
+* Django REST framework: 3.9, 3.10, 3.11
 
 _Note: This is a replacement for
 [djangorestframework-camel-case](https://github.com/vbabiy/djangorestframework-camel-case)

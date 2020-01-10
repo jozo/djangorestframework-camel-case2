@@ -1,6 +1,8 @@
 # Changelog
 
 ## [Unreleased]
+- Drop support for Python 2, Django 1.11 and Django Rest Framework 3.8
+- Fix rendering of lazy strings from Django
 
 ## [0.2.5]
 - Changed project internals - we are using poetry now
